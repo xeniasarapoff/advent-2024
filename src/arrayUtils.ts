@@ -18,12 +18,12 @@ export class ArrayUtils {
     }
 
     /**
-   * Counts how many times a specific value appears in an array.
-   * @param array - The array to search.
-   * @param target - The value to count.
-   * @returns The number of occurrences of the target value.
-   */
-  static countOccurrences(array: number[], target: number): number {
-    return array.reduce((count, num) => (num === target ? count + 1 : count), 0);
-  }
+     * Counts how many times a specific value appears in an array.
+     * @param array - The array to search.
+     * @param target - The value to count.
+     * @returns The number of occurrences of the target value.
+     */
+    static countOccurrences(array: number[], target: number): number {
+      return array.reduce((count, num) => (num === target ? count + 1 : count), 0);
+    }
   }
