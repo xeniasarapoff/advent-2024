@@ -2,7 +2,7 @@ import { Day02 } from '../src/day02';
 
 describe('Day02', () => {
 
-  const day02 = new Day02('day02/data.txt');
+  const day02 = new Day02('day02/test.txt');
 
   it('should solve part 1 with the input file', () => {
     expect(day02.solvePart1()).toBe(2); 

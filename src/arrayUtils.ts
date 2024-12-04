@@ -26,4 +26,13 @@ export class ArrayUtils {
     static countOccurrences(array: number[], target: number): number {
       return array.reduce((count, num) => (num === target ? count + 1 : count), 0);
     }
+
+    /**
+     * Sum all the element of an array of numbers.
+     * @param array - The array to search.
+     * @returns The sum of the array values.
+     */
+    static sumArray(array: number[]): number {
+      return array.reduce((sum, num) => sum + num, 0);
+    }
   }
