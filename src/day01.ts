@@ -16,7 +16,7 @@ export class Day01 extends AdventOfCodeBase {
     const arraySolution = sorted1.map((value, index) => {
       return Math.abs(value - sorted2[index]);
     });
-    return this.sumArray(arraySolution); 
+    return ArrayUtils.sumArray(arraySolution); 
   }
 
   solvePart2(): number {
@@ -24,11 +24,7 @@ export class Day01 extends AdventOfCodeBase {
       const occ = ArrayUtils.countOccurrences(this.column2, value);
       return value * occ;
     });
-    return this.sumArray(arraySolution);
-  }
-
-  sumArray(array: number[]): number {
-    return array.reduce((sum, num) => sum + num, 0);
+    return ArrayUtils.sumArray(arraySolution);
   }
 
   splitColumns(): void {
